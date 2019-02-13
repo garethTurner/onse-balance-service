@@ -1,9 +1,9 @@
-def github_id = 'CHANGEME'
+def github_id = 'garethTurner'
 
 def namespace = github_id.toLowerCase()
 def app_image_name = "onsetraining/${namespace}-balance-service"
 def worker_image_name = "onsetraining/${namespace}-balance-service-worker"
-def git_repository = "https://github.com/${github_id}/onse-balance-service"
+def git_repository = "https://github.com/${github_id.toLowerCase()}/onse-balance-service"
 
 def kaniko_image = 'gcr.io/kaniko-project/executor:debug-b0e7c0e8cd07ef3ad2b7181e0779af9fcb312f0b'
 def kubectl_image = 'aklearning/onse-eks-kubectl-deployer:0.0.1'
